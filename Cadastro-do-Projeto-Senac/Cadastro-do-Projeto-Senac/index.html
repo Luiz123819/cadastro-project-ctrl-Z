@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-bar">
+            <h1>Formulário</h1>
+            <img src="" alt="">
+        </div>
+    </header>
+
+    <!-- Estrutura do modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <span class="msg">
+                <i class="fa-solid fa-triangle-exclamation" style="color: rgb(255, 0, 0); font-size: 18pt;"></i>
+                Preencha os campos!!!
+            </span>
+
+            <button class="ok-button">OK</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <form class="form-control form" onsubmit="return confirmar()">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="img_home">
+                        <img src="img/logo project z.png" alt="Logo" class="imagem">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" name="nome" id="nome" class="nome form-control" autocomplete="none"
+                            placeholder="Digite aqui...">
+                    </p>
+                </div>
+                <div class="col-sm-12">
+                    <p>
+                        <label for="turma">Turma:</label><br>
+                        <input type="text" name="Turma" id="turma" class="Turma form-control"
+                            placeholder="Digite aqui...">
+                    </p>
+                </div>
+                <div class="col-sm-12">
+                    <p>
+                        <label for="turno">Turno:</label><br>
+                        <select name="turno" id="turno" class="turno form-control">
+                            <option value="Manha">Manhã</option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Noite">Noite</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="observacoes">Observações:</label>
+                    <br>
+                    <textarea name="observacoes" id="observacoes" class="observacoes form-control"
+                        placeholder="Digite aqui..."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="buttons">
+                        <button type="button" class="btn btn-limpar btn-danger"
+                            style="margin-top: 20px; margin-bottom: 20px;" onclick="Limpar()">Limpar</button>
+                        <button type="submit" class="btn btn-confirmar btn-success"
+                            style="margin-top: 20px; margin-bottom: 20px;">Confirmar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
